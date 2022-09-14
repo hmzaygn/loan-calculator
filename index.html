@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <h1 class="text-primary">Loan Calculation Tool</h1>
+        <section class="row">
+            <label for="loan-types" class="p-0">Type Of Loans</label>
+            <select class="col12 mt-3 input-all" name="" id="loan-types">
+                <option value="placeholder">Our Loan Options...</option>
+                <option value="Mortgage">Mortgage</option>
+                <option value="Personal Finance Loan">Personal Finance Loan</option>
+                <option value="Car Loan">Car Loan</option>
+            </select>
+            <form action="" class="col-12">
+                <div class="row mt-3">
+                    <label for="term" class="p-0 mb-2">Loan Terms</label>
+                    <input type="number" name="term" id="term" class="input-all" />
+                </div>
+                <div class="row mt-3">
+                    <label for="amount" class="p-0 mb-2">Amount</label>
+                    <input type="number" name="amount" id="amount" class="input-all mb-3" />
+                    <button class="btn btn-primary mt-4">Calculate</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="d-none">
+            <h2 class="text-primary mt-4">Loan Informations</h2>
+            <table class="table table-bordered border-warning mt-4">
+                <tbody>
+                    <tr>
+                        <th>Loan Amount</th>
+                        <td id="result-amount"> ₺ </td>
+                        <th>Loan Type</th>
+                        <td id="result-type"></td>
+                    </tr>
+                    <tr>
+                        <th>Loan Terms</th>
+                        <td id="result-terms"></td>
+                        <th>Interest Rate</th>
+                        <td id="result-interest">0</td>
+                    </tr>
+                    <tr>
+                        <th>Total Amount</th>
+                        <td id="result-total-amount"> Nan ₺ </td>
+                        <th>Installment Amount</th>
+                        <td id="result-installment">Nan ₺</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
